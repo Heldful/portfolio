@@ -12,15 +12,14 @@ const computedFields = {
 	},
 	slug: {
 		type: "string",
-		resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+		resolve: (doc) => doc._raw.flattenedPath.split("/").slice(2).join("/"),
 	},
 };
 
 export const Project = defineDocumentType(() => ({
 	name: "Project",
-	filePathPattern: "./projects/**/*.mdx",
+	filePathPattern: "{en,esp}/projects/**/*.mdx",
 	contentType: "mdx",
-
 	fields: {
 		published: {
 			type: "boolean",
@@ -48,7 +47,7 @@ export const Project = defineDocumentType(() => ({
 
 export const Page = defineDocumentType(() => ({
 	name: "Page",
-	filePathPattern: "pages/**/*.mdx",
+	filePathPattern: "{en,esp}/pages/**/*.mdx",
 	contentType: "mdx",
 	fields: {
 		title: {

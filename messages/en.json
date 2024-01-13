@@ -1,0 +1,23 @@
+{
+  "Home": {
+    "name": "Emma Held",
+    "description": "I am a Game Developer from Argentina. I love to learn and create new things.",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Projects": {
+    "title": "Projects",
+    "description": "Some of the projects are from work and some are on my own time.",
+    "readMore": "Read more",
+    "comingSoon": "SOON"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "If you want to contact me, you can send me an email to"
+  }
+}
