@@ -42,7 +42,7 @@ const ProjectsPage = async ({
   }, {} as Record<string, number>);
 
   const featured = localizedProjects.find(
-    (project) => project.slug === "unkey"
+    (project) => project.slug === "game-sample"
   )!;
   const top2 = localizedProjects.find(
     (project) => project.slug === "planetfall"

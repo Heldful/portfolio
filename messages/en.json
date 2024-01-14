@@ -14,7 +14,10 @@
     "title": "Projects",
     "description": "Some of the projects are from work and some are on my own time.",
     "readMore": "Read more",
-    "comingSoon": "SOON"
+    "comingSoon": "SOON",
+    "game": {
+      "deviceSizeWarning": "This game is not optimized for your device. Use a Desktop or Laptop for a better experience."
+    }
   },
   "Contact": {
     "title": "Contact",
