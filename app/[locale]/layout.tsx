@@ -1,8 +1,14 @@
-import "../global.css";
+import "../../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+import { locales } from "@/config/i18n.config";
+import { unstable_setRequestLocale } from "next-intl/server";
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export const metadata: Metadata = {
   title: {
@@ -12,8 +18,7 @@ export const metadata: Metadata = {
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "chronark.com",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+    description: "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://chronark.com",
     siteName: "chronark.com",
     images: [
@@ -51,23 +56,33 @@ const inter = Inter({
 });
 
 const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
+  src: "../../public/fonts/CalSans-SemiBold.ttf",
   variable: "--font-calsans",
 });
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: {
+    locale: string;
+  };
 }) {
+  unstable_setRequestLocale(locale);
+
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html
+      lang={locale}
+      className={[inter.variable, calSans.variable].join(" ")}
+    >
       <head>
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>

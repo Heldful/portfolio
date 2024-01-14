@@ -1,4 +1,7 @@
 import { withContentlayer } from "next-contentlayer";
+import getWithNextIntl from 'next-intl/plugin'
+
+const withNextIntl = getWithNextIntl()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,4 +11,4 @@ const nextConfig = {
 	},
 };
 
-export default withContentlayer(nextConfig);
+export default withNextIntl(withContentlayer(nextConfig));

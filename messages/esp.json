@@ -1,0 +1,23 @@
+{
+  "Home": {
+    "name": "Emma Held",
+    "description": "Soy un desarrollador de software en Argentina. Me encanta aprender y crear cosas nuevas.",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "description": "Algunos de los proyectos son de trabajo y otros son en mi tiempo libre.",
+    "readMore": "Leer más",
+    "comingSoon": "PRONTO"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "If you want to contact me, you can send me an email to"
+  }
+}

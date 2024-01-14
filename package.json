@@ -9,6 +9,7 @@
     "fmt": "pnpm rome check . --apply-unsafe && pnpm rome format . --write"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "@next/font": "^13.5.4",
     "@next/mdx": "^13.5.4",
     "@upstash/redis": "^1.23.3",
@@ -18,6 +19,7 @@
     "markdown-wasm": "^1.2.0",
     "next": "^13.5.4",
     "next-contentlayer": "^0.3.4",
+    "next-intl": "^3.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-wrap-balancer": "^1.1.0",
