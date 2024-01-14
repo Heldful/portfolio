@@ -4,6 +4,7 @@ import { getRoutesForLocale } from "@/config/routes.config";
 import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { LanguageToggle } from "../../components/languageToggle";
 
 type Props = {
   project: {
@@ -90,6 +91,7 @@ export const Header: React.FC<Props> = ({ project, views, locale }) => {
                 } `}
               />
             </Link>
+            <LanguageToggle locale={locale} />
           </div>
 
           <Link
