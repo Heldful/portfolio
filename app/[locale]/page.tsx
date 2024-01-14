@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { getRoutesForLocale } from "@/config/routes.config";
 import { Languages } from "@/config/i18n.config";
+import { LanguageToggle } from "./components/languageToggle";
 
 export default function Home({
   params: { locale },
@@ -48,6 +49,9 @@ export default function Home({
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">{t("description")}</h2>
+      </div>
+      <div className="my-16 text-center animate-fade-in flex justify-center items-center w-full">
+        <LanguageToggle locale={locale} />
       </div>
     </div>
   );

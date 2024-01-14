@@ -1,6 +1,6 @@
 export enum Languages {
-  en = "en",
-  esp = "esp",
+  En = "en",
+  Esp = "esp",
 }
 
 export const locales = Object.values(Languages);

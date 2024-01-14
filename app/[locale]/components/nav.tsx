@@ -2,9 +2,9 @@
 import { Languages } from "@/config/i18n.config";
 import { getRoutesForLocale } from "@/config/routes.config";
 import { ArrowLeft } from "lucide-react";
-import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { LanguageToggle } from "./languageToggle";
 
 type Links = {
   projects: string;
@@ -56,6 +56,7 @@ export const Navigation: React.FC<Props> = ({ locale, links }: Props) => {
             >
               {links.contact}
             </Link>
+            <LanguageToggle locale={locale} />
           </div>
 
           <Link

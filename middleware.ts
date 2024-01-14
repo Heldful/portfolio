@@ -3,7 +3,7 @@ import createMiddleware from "next-intl/middleware";
 import { Languages } from "./config/i18n.config";
 
 // Define the default and supported locales
-const defaultLocale = Languages.en;
+const defaultLocale = Languages.En;
 const supportedLocales = Object.values(Languages);
 
 // Create the next-intl middleware
