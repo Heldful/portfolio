@@ -14,7 +14,10 @@
     "title": "Proyectos",
     "description": "Algunos de los proyectos son de trabajo y otros son en mi tiempo libre.",
     "readMore": "Leer más",
-    "comingSoon": "PRONTO"
+    "comingSoon": "PRONTO",
+    "game": {
+      "deviceSizeWarning": "Este juego no está optimizado para dispositivos móviles. Por favor, juegue en una computadora de escritorio o una computadora portátil."
+    }
   },
   "Contact": {
     "title": "Contact",

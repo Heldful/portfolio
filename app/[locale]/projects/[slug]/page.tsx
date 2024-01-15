@@ -59,7 +59,7 @@ export default async function PostPage({ params: { slug, locale } }: Props) {
       <ReportView slug={project.slug} />
 
       <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
-        <Mdx code={project.body.code} />
+        <Mdx code={project.body.code} locale={locale} />
       </article>
     </div>
   );
